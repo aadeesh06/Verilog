@@ -1,4 +1,5 @@
 `include "serial_parity_detector.v"
+// test bench for parity detector
 module parity_test;
     reg clk, x;
     wire z;

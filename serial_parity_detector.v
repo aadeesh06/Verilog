@@ -1,5 +1,6 @@
 module parity_gen(x,clk,z);
     //a moore machine
+    // a serial parity detector which checks if the number of 1's in the incoming sequence are odd or even 
     input x, clk;
     output reg z;
     reg even_odd; // machine state
