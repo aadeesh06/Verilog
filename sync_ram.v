@@ -1,5 +1,5 @@
 // A memory element can be regarded as a two dimensional array of storage cells.
-
+// The below code is for modeling a synchronous ram with synchronous read and write.
 module ram_v1(addr, data, clk, read, write, cs); // cs stands for chip select
     input [7:0] addr;   // address
     input clk, read, write, cs;   // clock for synchronous ram, 
