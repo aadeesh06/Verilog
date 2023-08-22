@@ -9,7 +9,7 @@ module cmos_mux_tb;
         for(k = 0; k < 8; k = k + 1)
         begin
             #5 {sel , in0, in1} = k; 
-            $display("Sel = %b, in1 = %b , in2 = %b", sel, in1, in0);
+            $display("Sel = %b, in1 = %b , in0 = %b", sel, in1, in0);
         end
     end
 endmodule
