@@ -3,6 +3,8 @@ module tran_mux_tb;
     reg s0, s1, i0, i1, i2, i3;
     wire out;
     integer k;
+
+    tran_mux t1(out, s0, s1, i0, i1, i2, i3);
     initial begin 
         for(k = 0; k < 64; k = k + 1)
         begin
