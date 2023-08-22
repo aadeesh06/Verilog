@@ -16,12 +16,16 @@ module pipe_ex(F, A, B, C, D, clk);
         L12_x2 <= #4 C - D;
         L12_D <= D;
         /*stage 1 ends*/
-
+    end
+    always @(posedge clk)
+    begin
         // Stage 2 starts
         L23_x3 <= #4 L12_x1 + L12_x2;
         L23_D <= L12_D;
         // Stage 2 ends
-
+    end
+    always @(posedge clk)
+    begin
         // Stage 3 starts
         L34_F <= #6 L23_x3 * L23_D;
 
