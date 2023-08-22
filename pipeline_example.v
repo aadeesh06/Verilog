@@ -1,6 +1,7 @@
 module pipe_ex(F, A, B, C, D, clk);
     parameter N = 10;
-
+    // The code is an example of a three stage pipeline model. 
+    //You can see the block diagram in the pipeline_BD.jpeg file.
     input [N-1:0]A, B, C,D;
     input clk;
     output [N-1:0] F;
