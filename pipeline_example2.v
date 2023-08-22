@@ -31,7 +31,7 @@ module pipe_ex2(Z_out, rs1, rs2, rd, func, addr, clk1, clk2);
     begin
         case(func)
             0: L23_Z <= #2 L12_A + L12_B;
-            1: L23_Z <= #2 L12_A + L12_B;
+            1: L23_Z <= #2 L12_A - L12_B;
             2: L23_Z <= #2 L12_A * L12_B;
             3: L23_Z <= #2 L12_A;
             4: L23_Z <= #2 L12_B;
